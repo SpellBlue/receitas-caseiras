@@ -137,19 +137,19 @@ h4{
     font-size: 1.3em;
     text-align: center;
     margin-bottom: 5px;
-    color: var(--darkest);
+    color: var(--lightest);
 }
 aside{
     text-indent: 15px;
     line-height: 1.4em;
     text-align: justify;
     font-family: Arial, Verdana, sans-serif;
-    color: var(--darkest);
+    color: var(--lightest);
     columns: 2;
     font-size: small;
     padding: 20px 30px;
     border-radius: 10px;
-    background-color: var(--lightest);
+    background-color: var(--dark);
     max-width: 780px;
     min-width: 320px;
     margin: auto;
@@ -167,9 +167,24 @@ div#ftr{
     color: var(--lightest);
 }
 /* específico do home */
-h3#home{
-
+h3.home{
+    background-color: var(--dark);
+    background-image: none;
+    border-radius: 10px;
 }
-nav#home{
-    columns: 2;
+nav.home{
+    background-color: var(--lightest);
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto auto;
+}
+ul.home{
+}
+li.home{
+    display: block;
+}
+.home a{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+    text-decoration: none;
 }
