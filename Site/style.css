@@ -45,6 +45,7 @@ a.home{
     text-decoration: none;
     background-color: #B59173;
     padding: 10px;
+    margin: 0 -10px;
 }
 a.home:hover{
     color: var(--lightest);
@@ -167,21 +168,31 @@ div#ftr{
     color: var(--lightest);
 }
 /* específico do home */
+h2.home{
+    max-width: 780px;
+    min-width: 320px;
+    margin: auto;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.178);
+    padding: 10px 30px;
+}
 h3.home{
     background-color: var(--dark);
     background-image: none;
     border-radius: 10px;
+    
 }
 nav.home{
     background-color: var(--lightest);
     display: grid;
-    gap: 20px;
+    gap: 10px;
     grid-template-columns: auto auto;
 }
 ul.home{
 }
 li.home{
     display: block;
+    text-align: center;
 }
 .home a{
     font-family: 'Times New Roman', Times, serif;
