@@ -79,12 +79,14 @@ a.menu{
 }
 .dropmenu a{
     display: block;
-    padding: 5px;
+    padding: 10px;
 }
 .dropmenu a:hover{
     color: var(--lightest);
     background-color: var(--darkest);
+    border-color: var(--darkest);
 }
+
 /* início do conteúdo */
 h2{
     text-align: center;
@@ -112,7 +114,7 @@ h3{
 li{
     font-family: Arial, Verdana, sans-serif;
     font-size: 1.2em;
-    margin: 0 0 1px 0px;
+    margin: 10px 0;
     list-style-position: inside;
 }
 img{
@@ -140,6 +142,12 @@ h4{
     margin-bottom: 5px;
     color: var(--lightest);
 }
+h4.multi{
+    color: var(--darkest);
+    text-align: left;
+    font-family: Arial, Verdana, sans-serif;
+    margin: 5px 0;
+}
 aside{
     text-indent: 15px;
     line-height: 1.4em;
@@ -157,15 +165,38 @@ aside{
     margin-top: 20px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.178);
 }
+aside.choco{
+    columns: 1;
+}
 /* rodapé */
-div#ftr{
+h5{
+    font-size: 1.1em;
+    padding: 0 15px;
+}
+.ftr ul{
+    text-align: left;
+    width: 100%;
+}
+.ftr li{
+    display: inline-block;
+    padding: 0 10px;
+}
+.ftr a{
+    font-size: 0.9em;
+    color: var(--light);
+    text-decoration: none;
+    font-weight: bolder;
+}
+.ftr{
     display: grid;
     place-items: center;
-    height: 60px;
+    height: fit-content;
     margin-top: 10px;
+    padding: 10px 0;
     text-align: center;
     background-color: #1F1817;
     color: var(--lightest);
+    width: 100%;
 }
 /* específico do home */
 h2.home{
@@ -187,8 +218,6 @@ nav.home{
     display: grid;
     gap: 10px;
     grid-template-columns: auto auto;
-}
-ul.home{
 }
 li.home{
     display: block;
