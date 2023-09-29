@@ -215,13 +215,11 @@ h3.home{
     text-align: center;
 }
 a.hpage{
-    background-color: var(--light);
-    color: var(--lightest);
+    color: var(--darkest);
     padding: 7px;
-    border-radius:10px;
 }
 a.hpage:hover{
-    background-color: var(--darkest);
+    color: var(--dark);
 }
 nav.home{
     background-color: var(--lightest);
