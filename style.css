@@ -134,6 +134,7 @@ main{
     min-width: 320px;
     margin: auto;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.178);
+    text-align: justify;
 }
 h4{
     font-family: 'Times New Roman', Times, serif;
@@ -211,7 +212,16 @@ h3.home{
     background-color: var(--dark);
     background-image: none;
     border-radius: 10px;
-    
+    text-align: center;
+}
+a.hpage{
+    background-color: var(--light);
+    color: var(--lightest);
+    padding: 7px;
+    border-radius:10px;
+}
+a.hpage:hover{
+    background-color: var(--darkest);
 }
 nav.home{
     background-color: var(--lightest);
