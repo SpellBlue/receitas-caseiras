@@ -246,6 +246,7 @@ li.home{
         padding-left: 0;
         padding-right: 0;
         overflow-x: hidden;
+        position: relative;
         }
     main{
         padding-left: 10px;
