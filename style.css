@@ -257,4 +257,7 @@ li.home{
     nav.home{
         display: block;
         }
+    aside{
+        columns: 1;
+        }
   }
