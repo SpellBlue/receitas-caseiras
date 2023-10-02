@@ -68,7 +68,7 @@ a.menu{
 }
 .dropmenu{
     display: none;
-    position: fixed;
+    position: absolute;
     text-align: center;
     margin-top: 10px;
     transform: translateX(-11px);
@@ -240,17 +240,6 @@ li.home{
 
 /*Mobile*/
 @media only screen and (max-width: 600px) {
-    html, body {
-        overflow-x: hidden;
-      }
-    body {
-        margin-left: 0px;
-        margin-right: 0px;
-        max-width: 100%;
-        padding-left: 0;
-        padding-right: 0;
-        position: relative;
-        }
     main{
         padding-left: 10px;
         padding-right: 10px;
@@ -259,9 +248,6 @@ li.home{
         display: block;
         }
     aside{
-        columns: 1;
+        columns: 2;
         }
-    .topmenu:hover{
-        cursor: pointer;
-    }
 }
