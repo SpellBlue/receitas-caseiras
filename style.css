@@ -17,6 +17,17 @@ body{
     color: var(--darkest);
 }
 /* cabeçalho e menu */
+.material-symbols-outlined {
+    padding: 10px 0;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+#mobmenu{
+    display: none;
+}
 header{
     width: 100%;
 }
@@ -239,7 +250,7 @@ li.home{
 }
 
 /*Mobile*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     main{
         padding-left: 10px;
         padding-right: 10px;
@@ -247,7 +258,60 @@ li.home{
     nav.home{
         display: block;
         }
+    .topmenu{
+        display: none;
+    }
+    .mobtopmenu{
+        display: block;
+    }
     aside{
         columns: 2;
         }
+    #mobmenu{
+        display: block;
+        color: var(--darkest);
+        background-color: var(--light);
+        margin: 0;
+        text-align: center;
+    }
+    .mobtopmenu{
+        color: var(--lightest);
+        font-weight: bold;
+    }
+    a.mobmenu{
+        color: #1F1817;
+        text-decoration: none;
+        background-color: #B59173;
+        padding: 10px;
+    }
+    #mobmenu>ul{
+        display: none;
+        background-color: var(--light);
+    }
+    .mobmenu{
+        display: block;
+        font-weight: normal;
+    }
+    .mobmenu:hover{
+        color: var(--lightest);
+        background-color: var(--darkest);
+        border-color: var(--darkest);
+    }
+    #mobmenu:hover >ul{
+        display:block;
+        position: absolute;
+        width: 100%;
+    }
+    #mobmenu:hover{
+        color: var(--lightest);
+        background-color: var(--darkest);
+        cursor: pointer;
+    }
+    .ftr>ul>li>a{
+        font-size: 0.44em;
+        padding: 0px;
+    }
+    h5{
+        font-size:0.8em ;
+    }
 }
