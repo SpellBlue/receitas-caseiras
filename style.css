@@ -58,22 +58,12 @@ a.home{
     padding: 10px;
     margin: 0 -10px;
 }
-a.home:hover{
-    color: var(--lightest);
-    background-color: var(--darkest);
-}
 a.menu{
     color: #1F1817;
     text-decoration: none;
     background-color: #B59173;
     padding: 10px;
 }
-.topmenu:hover{
-    color: var(--lightest);
-    background-color: var(--darkest);
-    cursor: default;
-}
-
 .topmenu:hover .dropmenu{
     display: block;
 }
@@ -92,11 +82,6 @@ a.menu{
 .dropmenu a{
     display: block;
     padding: 10px;
-}
-.dropmenu a:hover{
-    color: var(--lightest);
-    background-color: var(--darkest);
-    border-color: var(--darkest);
 }
 
 /* início do conteúdo */
@@ -230,9 +215,6 @@ a.hpage{
     color: var(--darkest);
     padding: 7px;
 }
-a.hpage:hover{
-    color: var(--dark);
-}
 nav.home{
     background-color: var(--lightest);
     display: grid;
@@ -292,20 +274,10 @@ li.home{
         display: block;
         font-weight: normal;
     }
-    .mobmenu:hover{
-        color: var(--lightest);
-        background-color: var(--darkest);
-        border-color: var(--darkest);
-    }
     #mobmenu:hover >ul{
         display:block;
         position: absolute;
         width: 100%;
-    }
-    #mobmenu:hover{
-        color: var(--lightest);
-        background-color: var(--darkest);
-        cursor: pointer;
     }
     .ftr>ul>li>a{
         font-size: 0.44em;
@@ -313,5 +285,25 @@ li.home{
     }
     h5{
         font-size:0.8em ;
+    }
+}
+/*desktop only*/
+@media only screen and (min-width: 800px) {
+    a.hpage:hover{
+        color: var(--dark);
+    }
+    .dropmenu a:hover{
+        color: var(--lightest);
+        background-color: var(--darkest);
+        border-color: var(--darkest);
+    }
+    .topmenu:hover{
+        color: var(--lightest);
+        background-color: var(--darkest);
+        cursor: default;
+    }
+    a.home:hover{
+        color: var(--lightest);
+        background-color: var(--darkest);
     }
 }
