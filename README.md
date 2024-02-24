@@ -1,5 +1,5 @@
 # receitas-caseiras
 
-primeiro projeto, sem frameworks.
+primeiro projeto.
 
 link: https://spellblue.github.io/receitas-caseiras/
